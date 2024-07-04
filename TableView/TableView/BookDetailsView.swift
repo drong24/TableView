@@ -21,7 +21,7 @@ class BookDetailsView: UIViewController {
         // Do any additional setup after loading the view.
         TitleLabel.text = bookTitle
         AuthorLabel.text = bookAuthor
-        //BookImage.image = 
+        BookImage.image = UIImage(named: bookTitle)
     }
     
 
