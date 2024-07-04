@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let tableLogic = TableLogic()
     var bookTitle = ""
     var bookAuthor = ""
+    var bookDesc = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         bookTitle = tableLogic.getTitle(row: indexPath.row)
         bookAuthor = tableLogic.getAuthor(row: indexPath.row)
+        bookDesc = tableLogic.getDesc(row: indexPath.row)
         self.performSegue(withIdentifier: "toBookDetails", sender: self)
     }
     
@@ -46,6 +48,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let navigation = segue.destination as! BookDetailsView
             navigation.bookAuthor = bookAuthor
             navigation.bookTitle = bookTitle
+            navigation.bookDesc = bookDesc
         }
     }
 

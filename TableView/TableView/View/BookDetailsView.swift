@@ -12,9 +12,11 @@ class BookDetailsView: UIViewController {
     @IBOutlet weak var BookImage: UIImageView!
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var AuthorLabel: UILabel!
+    @IBOutlet weak var DescLabel: UILabel!
     
     var bookTitle = ""
     var bookAuthor = ""
+    var bookDesc = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,7 @@ class BookDetailsView: UIViewController {
         TitleLabel.text = bookTitle
         AuthorLabel.text = bookAuthor
         BookImage.image = UIImage(named: bookTitle)
+        DescLabel.text = bookDesc
     }
     
 

@@ -80,16 +80,22 @@
                                 <rect key="frame" x="30" y="50" width="333" height="742"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJk-gL-C4O">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="247.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="185.66666666666666"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nD-Zn-T17">
-                                        <rect key="frame" x="0.0" y="247.33333333333331" width="333" height="247.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="185.66666666666663" width="333" height="185.33333333333337"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S44-B7-jQr">
-                                        <rect key="frame" x="0.0" y="494.66666666666657" width="333" height="247.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="371" width="333" height="185.66666666666663"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep6-dm-JRc">
+                                        <rect key="frame" x="0.0" y="556.66666666666663" width="333" height="185.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -109,6 +115,7 @@
                     <connections>
                         <outlet property="AuthorLabel" destination="S44-B7-jQr" id="l4a-C4-bu7"/>
                         <outlet property="BookImage" destination="fJk-gL-C4O" id="E6q-Jh-p2k"/>
+                        <outlet property="DescLabel" destination="ep6-dm-JRc" id="5JZ-Oy-o3p"/>
                         <outlet property="TitleLabel" destination="4nD-Zn-T17" id="iJ7-E4-QRt"/>
                     </connections>
                 </viewController>

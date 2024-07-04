@@ -10,9 +10,11 @@ import Foundation
 struct BookItem {
     var title: String
     var author: String
+    var desc: String
     
-    init (t: String, a: String) {
+    init (t: String, a: String, d: String) {
         title = t
         author = a
+        desc = d
     }
 }
