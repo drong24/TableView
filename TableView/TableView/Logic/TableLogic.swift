@@ -16,4 +16,16 @@ struct TableLogic {
         BookItem(t: "Dune", a: "Frank Herbert")
     ]
     
+    func getCount() -> Int {
+        return books.count
+    }
+    
+    func getTitle(row: Int) -> String {
+        return books[row].title
+    }
+    
+    func getAuthor(row: Int) -> String {
+        return books[row].author
+    }
+    
 }

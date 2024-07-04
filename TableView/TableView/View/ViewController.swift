@@ -9,40 +9,33 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    let tableLogic = TableLogic()
     var bookTitle = ""
     var bookAuthor = ""
     
-    var books = [
-        BookItem(t: "To Kill a Mockingbird", a: "Harper Lee"),
-        BookItem(t: "The Hobbit", a: "John Ronald Reuel Tolkien"),
-        BookItem(t: "Charlotte's Web", a: "E. B. White"),
-        BookItem(t: "Dune", a: "Frank Herbert")
-    ]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return tableLogic.getCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        content.text = books[indexPath.row].title
-        content.secondaryText = books[indexPath.row].author
+        content.text = tableLogic.getTitle(row: indexPath.row)
+        content.secondaryText = tableLogic.getAuthor(row: indexPath.row)
         cell.contentConfiguration = content
         return cell
     }
     
-    // table row on click
+    // table row on click function
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("clicked" + books[indexPath.row].title)
-        bookTitle = books[indexPath.row].title
-        bookAuthor = books[indexPath.row].author
+        bookTitle = tableLogic.getTitle(row: indexPath.row)
+        bookAuthor = tableLogic.getAuthor(row: indexPath.row)
         self.performSegue(withIdentifier: "toBookDetails", sender: self)
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation

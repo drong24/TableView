@@ -68,8 +68,6 @@
 				ABBCEEF12C35F16F000F808E /* AppDelegate.swift */,
 				ABBCEF0D2C375277000F808E /* View */,
 				ABBCEEF72C35F16F000F808E /* Main.storyboard */,
-				ABBCEF0B2C37522E000F808E /* BookDetailsView.swift */,
-				ABBCEEF52C35F16F000F808E /* ViewController.swift */,
 				ABBCEEFA2C35F170000F808E /* Assets.xcassets */,
 				ABBCEEFC2C35F170000F808E /* LaunchScreen.storyboard */,
 				ABBCEEFF2C35F170000F808E /* Info.plist */,
@@ -96,6 +94,8 @@
 		ABBCEF0D2C375277000F808E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABBCEEF52C35F16F000F808E /* ViewController.swift */,
+				ABBCEF0B2C37522E000F808E /* BookDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
