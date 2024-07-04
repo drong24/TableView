@@ -19,6 +19,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zlO-uc-s11">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.66666668650000005" green="0.56196482699999994" blue="0.29358628409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" textLabel="e0U-xJ-DiN" detailTextLabel="nbX-4C-mAF" style="IBUITableViewCellStyleValue1" id="JVs-9i-026">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -76,26 +77,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7Cv-m2-ssS">
-                                <rect key="frame" x="30" y="50" width="333" height="742"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Cv-m2-ssS">
+                                <rect key="frame" x="30" y="30" width="333" height="782"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJk-gL-C4O">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="185.66666666666666"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nD-Zn-T17">
-                                        <rect key="frame" x="0.0" y="185.66666666666663" width="333" height="185.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="185.66666666666663" width="333" height="558"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S44-B7-jQr">
-                                        <rect key="frame" x="0.0" y="371" width="333" height="185.66666666666663"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="743.66666666666663" width="333" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep6-dm-JRc">
-                                        <rect key="frame" x="0.0" y="556.66666666666663" width="333" height="185.33333333333337"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep6-dm-JRc">
+                                        <rect key="frame" x="0.0" y="761.66666666666663" width="333" height="20.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -106,10 +107,10 @@
                         <viewLayoutGuide key="safeArea" id="3vJ-4M-nag"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7Cv-m2-ssS" firstAttribute="leading" secondItem="3vJ-4M-nag" secondAttribute="leading" constant="30" id="AJN-Hx-Twb"/>
-                            <constraint firstItem="3vJ-4M-nag" firstAttribute="bottom" secondItem="7Cv-m2-ssS" secondAttribute="bottom" constant="50" id="hlB-XI-ga7"/>
-                            <constraint firstItem="7Cv-m2-ssS" firstAttribute="top" secondItem="3vJ-4M-nag" secondAttribute="top" constant="50" id="lsL-TH-lNa"/>
-                            <constraint firstItem="3vJ-4M-nag" firstAttribute="trailing" secondItem="7Cv-m2-ssS" secondAttribute="trailing" constant="30" id="r4e-MY-5n6"/>
+                            <constraint firstItem="3vJ-4M-nag" firstAttribute="bottom" secondItem="7Cv-m2-ssS" secondAttribute="bottom" constant="30" id="0ZT-pe-v8g"/>
+                            <constraint firstItem="3vJ-4M-nag" firstAttribute="trailing" secondItem="7Cv-m2-ssS" secondAttribute="trailing" constant="30" id="K27-TQ-TVj"/>
+                            <constraint firstItem="7Cv-m2-ssS" firstAttribute="top" secondItem="3vJ-4M-nag" secondAttribute="top" constant="30" id="dwU-Qb-FKa"/>
+                            <constraint firstItem="7Cv-m2-ssS" firstAttribute="leading" secondItem="3vJ-4M-nag" secondAttribute="leading" constant="30" id="imr-u3-Pcv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -127,6 +128,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
